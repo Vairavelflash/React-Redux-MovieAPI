@@ -9,6 +9,7 @@ const data = useSelector((state) => state.movies.selectUnivOrShow)
   useEffect(()=>{
 dispatch(fetchAsyncMoviesOrShowsDetail(imdbID))
   },[dispatch,imdbID])
+  console.log('details',data)
   return (
     <div>MovieDetail</div>
   )

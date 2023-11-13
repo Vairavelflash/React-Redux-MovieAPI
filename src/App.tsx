@@ -7,7 +7,7 @@ import Home from './components/Home/Home'
 import PageNotFound from './components/PageNotFound/PageNotFound'
 import Footer from './components/Footer/Footer'
 
-function App() {
+const App : React.FC = () => {
   return (
 <div className="app">
 <BrowserRouter>
