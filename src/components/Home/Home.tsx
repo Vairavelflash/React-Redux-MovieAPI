@@ -4,15 +4,15 @@ import MovieListing from '../MovieListing/MovieListing'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import {  fetchAsyncMovies, fetchAsyncShows } from '../../features/movies/movieSlice'
-function Home() {
-  const dispatch = useDispatch();
+const  Home : React.FC = () =>  {
+  const dispatch :any = useDispatch();
 
 
   useEffect( ()=>{
    
     // const response  = await axios.get('http://www.omdbapi.com' +`?apiKey=${APIKey}&s=${movieText}&type=movie`) 
-   dispatch(fetchAsyncMovies())
-   dispatch(fetchAsyncShows())
+   dispatch(fetchAsyncMovies());
+   dispatch(fetchAsyncShows());
     
   },[dispatch])
   return (
@@ -24,4 +24,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
